@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+iostream
+-
+queue
+-
+
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp
+iostream
+-
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+producers.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
+
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+random_generator.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+iostream
+-
+

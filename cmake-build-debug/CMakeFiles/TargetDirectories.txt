@@ -1,0 +1,3 @@
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,4 @@
+/opt/CLion-2019.1.2/clion-2019.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/unimind/Documents/Projects/Producers_and_Consumers_Problem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug
