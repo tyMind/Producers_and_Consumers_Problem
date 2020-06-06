@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o"
   "CMakeFiles/Producers_and_Consumers_Problem.dir/random_generator.cpp.o"
   "CMakeFiles/Producers_and_Consumers_Problem.dir/data_container.cpp.o"
+  "CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o"
   "Producers_and_Consumers_Problem.pdb"
   "Producers_and_Consumers_Problem"
 )

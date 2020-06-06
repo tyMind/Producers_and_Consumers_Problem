@@ -3,21 +3,19 @@
 
 #include "data_container.h"
 #include "random_generator.h"
+#include <thread>
 
 class Producers{
 public:
+    Producers(){}
+    Producers(int number);
+
     DataQueue dataQueue;
     RandomGenerator randomGenerator;
-    void enqueue(int number){
-        int randomNumber=randomGenerator.getRandomNumber();
-        dataQueue.putIntoQueue(number);
-    }
+    void enqueue(int number);
+    void dequeue();
 
-    void dequeue(){
-        dataQueue.getDeleteFromQueue();
-    }
-
-
+    ~Producers();
 };
 
 #endif //PRODUCERS_AND_CONSUMERS_PROBLEM_PRODUCERS_H

@@ -93,6 +93,9 @@
 		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp">
 			<Option target="Producers_and_Consumers_Problem"/>
 		</Unit>
+		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.cpp">
+			<Option target="Producers_and_Consumers_Problem"/>
+		</Unit>
 		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h">
 			<Option target="Producers_and_Consumers_Problem"/>
 		</Unit>

@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+producers.o: producers.cpp.o
+
+.PHONY : producers.o
+
+# target to build an object file
+producers.cpp.o:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o
+.PHONY : producers.cpp.o
+
+producers.i: producers.cpp.i
+
+.PHONY : producers.i
+
+# target to preprocess a source file
+producers.cpp.i:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.i
+.PHONY : producers.cpp.i
+
+producers.s: producers.cpp.s
+
+.PHONY : producers.s
+
+# target to generate assembly for a file
+producers.cpp.s:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.s
+.PHONY : producers.cpp.s
+
 random_generator.o: random_generator.cpp.o
 
 .PHONY : random_generator.o
@@ -219,6 +246,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... producers.o"
+	@echo "... producers.i"
+	@echo "... producers.s"
 	@echo "... random_generator.o"
 	@echo "... random_generator.i"
 	@echo "... random_generator.s"
