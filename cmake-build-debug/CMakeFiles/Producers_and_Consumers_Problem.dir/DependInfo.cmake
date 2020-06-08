@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/data_container.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o"
+  "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/random_generator.cpp.o"
   )

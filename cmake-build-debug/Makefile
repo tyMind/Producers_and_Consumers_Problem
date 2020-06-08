@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+manager.o: manager.cpp.o
+
+.PHONY : manager.o
+
+# target to build an object file
+manager.cpp.o:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o
+.PHONY : manager.cpp.o
+
+manager.i: manager.cpp.i
+
+.PHONY : manager.i
+
+# target to preprocess a source file
+manager.cpp.i:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.i
+.PHONY : manager.cpp.i
+
+manager.s: manager.cpp.s
+
+.PHONY : manager.s
+
+# target to generate assembly for a file
+manager.cpp.s:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.s
+.PHONY : manager.cpp.s
+
 producers.o: producers.cpp.o
 
 .PHONY : producers.o
@@ -246,6 +273,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... manager.o"
+	@echo "... manager.i"
+	@echo "... manager.s"
 	@echo "... producers.o"
 	@echo "... producers.i"
 	@echo "... producers.s"

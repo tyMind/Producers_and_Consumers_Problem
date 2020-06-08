@@ -3,17 +3,25 @@
 
 #include <iostream>
 #include <queue>
+#include <mutex>
 
 class DataQueue{
-private:
-    static std::queue<int>dataQueue;
+protected:
+    static std::queue<int>queue;
+public:
+    static const int queueMaxSize;
+    static const int queueStandardSize;
+
 public:
     DataQueue(){}
     ~DataQueue(){}
 
-    void putIntoQueue(int number);
+    void pushIntoQueue(int number);
     int getDeleteFromQueue();
     void printNumQueueElements();
+    int getQueueSize(){
+        return queue.size();
+    }
 
 };
 

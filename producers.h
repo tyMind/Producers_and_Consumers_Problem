@@ -4,18 +4,20 @@
 #include "data_container.h"
 #include "random_generator.h"
 #include <thread>
+#include <mutex>
+#include "manager.h"
 
-class Producers{
+class Producers: public Manager{
 public:
-    Producers(){}
-    Producers(int number);
+//    Producers(){}
+//    Producers(int number);
 
-    DataQueue dataQueue;
-    RandomGenerator randomGenerator;
-    void enqueue(int number);
-    void dequeue();
+    void produceElems(int from, int to);
 
-    ~Producers();
+    void runProducer(int from, int to);
+
+//    ~Producers();
+
 };
 
 #endif //PRODUCERS_AND_CONSUMERS_PROBLEM_PRODUCERS_H

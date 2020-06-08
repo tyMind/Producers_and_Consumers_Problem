@@ -7,8 +7,6 @@ class RandomGenerator{
 public:
     int getRandomSleepTime(int from, int to);
     int getRandomNumber(int from, int to);
-    int getRandomProducerThread(int numberOfProducers);
-    int getRandomConsumerThread(int numberOfConsumers);
 
 };
 

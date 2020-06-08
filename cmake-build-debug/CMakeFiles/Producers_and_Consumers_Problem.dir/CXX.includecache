@@ -11,6 +11,8 @@ iostream
 -
 queue
 -
+mutex
+-
 
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp
 iostream
@@ -24,6 +26,18 @@ producers.h
 random_generator.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
+queue
+-
+mutex
+-
+thread
+-
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+random_generator.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
 data_container.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
@@ -31,6 +45,10 @@ random_generator.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 thread
 -
+mutex
+-
+manager.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
 
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 iostream

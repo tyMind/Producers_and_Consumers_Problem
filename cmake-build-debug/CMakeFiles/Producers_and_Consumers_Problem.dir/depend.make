@@ -6,10 +6,17 @@ CMakeFiles/Producers_and_Consumers_Problem.dir/data_container.cpp.o: ../data_con
 
 CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o: ../data_container.h
 CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o: ../main.cpp
+CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o: ../manager.h
 CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o: ../producers.h
 CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o: ../random_generator.h
 
+CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o: ../data_container.h
+CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o: ../manager.cpp
+CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o: ../manager.h
+CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o: ../random_generator.h
+
 CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o: ../data_container.h
+CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o: ../manager.h
 CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o: ../producers.cpp
 CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o: ../producers.h
 CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o: ../random_generator.h

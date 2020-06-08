@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 #include "data_container.h"
 #include "producers.h"
 #include "random_generator.h"
@@ -12,24 +13,30 @@ void printNumOfElemsQueue(DataQueue& dataQueue){
 int main() {
 
     int numberOfProducers, numberOfConsumers;
-    DataQueue dataQueue;
-    RandomGenerator randomGenerator;
+    DataQueue dataQueueObj;
+    RandomGenerator randomGeneratorObj;
+    Producers producerObj;
 
     std::cout<<"number of producers: ";
     std::cin>>numberOfProducers;
     std::cout<<"number of consumers: ";
     std::cin>>numberOfConsumers;
 
-    std::vector<Producers>producers;
+    std::vector<std::thread>producers(numberOfProducers);
+    int from=0;
+    int to=100;
+
     for(int i=0; i<numberOfProducers; i++){
-        int number=randomGenerator.getRandomNumber(0,100);
-        Producers p(number);
-        producers.push_back(p);
+        producers.push_back(std::thread(&Producers::runProducer, std::ref(producerObj), from, to));
     }
 
-    dataQueue.printNumQueueElements();
+    for(auto &th: producers){
+        th.join();
+    }
 
-    std::thread timer(printNumOfElemsQueue, std::ref(dataQueue));
+    dataQueueObj.printNumQueueElements();
+
+    std::thread timer(printNumOfElemsQueue, std::ref(dataQueueObj));
     timer.join();
 
 }

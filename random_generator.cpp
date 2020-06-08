@@ -11,12 +11,3 @@ int RandomGenerator::getRandomSleepTime(int from, int to){
     return randomSleepTime;
 }
 
-int RandomGenerator::getRandomProducerThread(int numberOfProducers){
-    int randomProducerThread=rand()%numberOfProducers;
-    return randomProducerThread;
-}
-
-int RandomGenerator::getRandomConsumerThread(int numberOfConsumers){
-    int randomConsumerThread=rand()%numberOfConsumers;
-    return randomConsumerThread;
-}
