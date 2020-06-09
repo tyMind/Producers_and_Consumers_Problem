@@ -19,3 +19,7 @@ int DataQueue::getDeleteFromQueue() {
 void DataQueue::printNumQueueElements() {
     std::cout<<queue.size();
 }
+
+int DataQueue::getQueueSize(){
+    return queue.size();
+}

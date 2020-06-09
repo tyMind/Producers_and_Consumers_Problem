@@ -3,25 +3,16 @@
 
 void Producers::produceElems(int from, int to) {
     //TODO: perform some check in this step
-    queue_mutex.lock();
-
     int randomNumber=randomGeneratorObj.getRandomNumber(from, to);
     dataQueueObj.pushIntoQueue(randomNumber);
     if(dataQueueObj.getQueueSize()>=dataQueueObj.queueMaxSize){
-        while(dataQueueObj.getQueueSize()>80){
-            //block/sleep thread until the elements number in queue is <=80
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
-        }
+        std::lock_guard<std::mutex>lck(queueMutex);
+        while(dataQueueObj.getQueueSize()>80){}
+        producersCV.notify_all();    //notify all producers, so that they would be able to push into queue
     }
-
-    queue_mutex.unlock();
 }
 
 void Producers::runProducer(int from, int to) {
-    produceElems(from, to);
     sleepThread();
+    produceElems(from, to);
 }
-
-//Producers::~Producers() {
-//    //call DataQueue and RandomGenerator destructor
-//}

@@ -26,6 +26,8 @@ int main() {
     int from=0;
     int to=100;
 
+    dataQueueObj.printNumQueueElements();
+
     for(int i=0; i<numberOfProducers; i++){
         producers.push_back(std::thread(&Producers::runProducer, std::ref(producerObj), from, to));
     }
@@ -34,7 +36,6 @@ int main() {
         th.join();
     }
 
-    dataQueueObj.printNumQueueElements();
 
     std::thread timer(printNumOfElemsQueue, std::ref(dataQueueObj));
     timer.join();

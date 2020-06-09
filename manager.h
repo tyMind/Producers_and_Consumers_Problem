@@ -4,6 +4,7 @@
 #include <queue>
 #include <mutex>
 #include <thread>
+
 #include "data_container.h"
 #include "random_generator.h"
 
@@ -13,7 +14,7 @@ class Manager{
 protected:
     RandomGenerator randomGeneratorObj;
     DataQueue dataQueueObj;
-    std::mutex queue_mutex;
+    std::mutex queueMutex;
 
 protected:
     void sleepThread();

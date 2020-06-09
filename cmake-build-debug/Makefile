@@ -123,6 +123,33 @@ Producers_and_Consumers_Problem/fast:
 	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/build
 .PHONY : Producers_and_Consumers_Problem/fast
 
+consumers.o: consumers.cpp.o
+
+.PHONY : consumers.o
+
+# target to build an object file
+consumers.cpp.o:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.o
+.PHONY : consumers.cpp.o
+
+consumers.i: consumers.cpp.i
+
+.PHONY : consumers.i
+
+# target to preprocess a source file
+consumers.cpp.i:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.i
+.PHONY : consumers.cpp.i
+
+consumers.s: consumers.cpp.s
+
+.PHONY : consumers.s
+
+# target to generate assembly for a file
+consumers.cpp.s:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.s
+.PHONY : consumers.cpp.s
+
 data_container.o: data_container.cpp.o
 
 .PHONY : data_container.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Producers_and_Consumers_Problem"
 	@echo "... edit_cache"
+	@echo "... consumers.o"
+	@echo "... consumers.i"
+	@echo "... consumers.s"
 	@echo "... data_container.o"
 	@echo "... data_container.i"
 	@echo "... data_container.s"

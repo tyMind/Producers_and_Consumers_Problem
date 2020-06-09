@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Producers_and_Consumers_Problem.dir/data_container.cpp.o"
   "CMakeFiles/Producers_and_Consumers_Problem.dir/producers.cpp.o"
   "CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o"
+  "CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.o"
   "Producers_and_Consumers_Problem.pdb"
   "Producers_and_Consumers_Problem"
 )

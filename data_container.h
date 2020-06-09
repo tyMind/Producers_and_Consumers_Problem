@@ -13,15 +13,10 @@ public:
     static const int queueStandardSize;
 
 public:
-    DataQueue(){}
-    ~DataQueue(){}
-
     void pushIntoQueue(int number);
     int getDeleteFromQueue();
     void printNumQueueElements();
-    int getQueueSize(){
-        return queue.size();
-    }
+    int getQueueSize();
 
 };
 
