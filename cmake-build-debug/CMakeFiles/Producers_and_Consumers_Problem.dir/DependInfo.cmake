@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.o"
+  "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/container_cache.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/container_cache.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/data_container.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/main.cpp.o"
   "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.cpp" "/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/cmake-build-debug/CMakeFiles/Producers_and_Consumers_Problem.dir/manager.cpp.o"

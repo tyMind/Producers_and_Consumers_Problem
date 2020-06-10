@@ -8,7 +8,7 @@ void Producers::produceElems(int from, int to) {
     if(dataQueueObj.getQueueSize()>=dataQueueObj.queueMaxSize){
         std::lock_guard<std::mutex>lck(queueMutex);
         while(dataQueueObj.getQueueSize()>80){}
-        producersCV.notify_all();    //notify all producers, so that they would be able to push into queue
+        producersCV.notify_all();    
     }
 }
 

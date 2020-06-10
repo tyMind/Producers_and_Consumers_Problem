@@ -2,8 +2,10 @@
 #include <vector>
 
 #include "data_container.h"
-#include "producers.h"
 #include "random_generator.h"
+
+#include "producers.h"
+#include "consumers.h"
 
 void printNumOfElemsQueue(DataQueue& dataQueue){
     dataQueue.printNumQueueElements();
@@ -16,6 +18,7 @@ int main() {
     DataQueue dataQueueObj;
     RandomGenerator randomGeneratorObj;
     Producers producerObj;
+    Consumers consumerObj;
 
     std::cout<<"number of producers: ";
     std::cin>>numberOfProducers;
@@ -23,19 +26,30 @@ int main() {
     std::cin>>numberOfConsumers;
 
     std::vector<std::thread>producers(numberOfProducers);
+    std::vector<std::thread>consumers(numberOfConsumers);
     int from=0;
     int to=100;
-
-    dataQueueObj.printNumQueueElements();
 
     for(int i=0; i<numberOfProducers; i++){
         producers.push_back(std::thread(&Producers::runProducer, std::ref(producerObj), from, to));
     }
 
-    for(auto &th: producers){
-        th.join();
+    for(int i=0; i<numberOfConsumers; i++){
+        consumers.push_back(std::thread(&Consumers::runConsumer, std::ref(consumerObj), from, to));
     }
 
+    for(auto &th: producers){
+
+        if(th.joinable()){
+            th.join();
+        }
+    }
+
+    for(auto &th: consumers){
+        if(th.joinable()){
+            th.join();
+        }
+    }
 
     std::thread timer(printNumOfElemsQueue, std::ref(dataQueueObj));
     timer.join();

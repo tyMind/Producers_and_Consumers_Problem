@@ -8,7 +8,7 @@ void Consumers::consumeElems(int from, int to) {
     }
     consumerCV.notify_all();
     int queueFrontElement=dataQueueObj.getDeleteFromQueue();
-    //file object file.write() , seperate function in Consumer class which will call within the function of writing to the file
+    containerCacheObj.writeToFile(queueFrontElement, "queue.txt");
 
 }
 

@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+random_generator.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+thread
+-
+mutex
+-
+condition_variable
+-
+manager.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
+container_cache.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/container_cache.h
+
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/container_cache.h
+iostream
+-
+fstream
+-
+
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
 iostream
 -
@@ -21,10 +43,12 @@ vector
 -
 data_container.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
-producers.h
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
 random_generator.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+producers.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
+consumers.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h
 
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
 queue
@@ -38,19 +62,17 @@ data_container.h
 random_generator.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.cpp
-producers.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
-
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
-data_container.h
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
-random_generator.h
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 thread
 -
 mutex
 -
+condition_variable
+-
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+random_generator.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
 manager.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
 

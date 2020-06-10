@@ -90,6 +90,12 @@
 		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h">
 			<Option target="Producers_and_Consumers_Problem"/>
 		</Unit>
+		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/container_cache.cpp">
+			<Option target="Producers_and_Consumers_Problem"/>
+		</Unit>
+		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/container_cache.h">
+			<Option target="Producers_and_Consumers_Problem"/>
+		</Unit>
 		<Unit filename="/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.cpp">
 			<Option target="Producers_and_Consumers_Problem"/>
 		</Unit>

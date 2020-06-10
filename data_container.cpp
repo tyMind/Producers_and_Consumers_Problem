@@ -17,7 +17,7 @@ int DataQueue::getDeleteFromQueue() {
 }
 
 void DataQueue::printNumQueueElements() {
-    std::cout<<queue.size();
+    std::cout<<"queue size is: "<<queue.size()<<std::endl;
 }
 
 int DataQueue::getQueueSize(){

@@ -150,6 +150,33 @@ consumers.cpp.s:
 	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/consumers.cpp.s
 .PHONY : consumers.cpp.s
 
+container_cache.o: container_cache.cpp.o
+
+.PHONY : container_cache.o
+
+# target to build an object file
+container_cache.cpp.o:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/container_cache.cpp.o
+.PHONY : container_cache.cpp.o
+
+container_cache.i: container_cache.cpp.i
+
+.PHONY : container_cache.i
+
+# target to preprocess a source file
+container_cache.cpp.i:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/container_cache.cpp.i
+.PHONY : container_cache.cpp.i
+
+container_cache.s: container_cache.cpp.s
+
+.PHONY : container_cache.s
+
+# target to generate assembly for a file
+container_cache.cpp.s:
+	$(MAKE) -f CMakeFiles/Producers_and_Consumers_Problem.dir/build.make CMakeFiles/Producers_and_Consumers_Problem.dir/container_cache.cpp.s
+.PHONY : container_cache.cpp.s
+
 data_container.o: data_container.cpp.o
 
 .PHONY : data_container.o
@@ -297,6 +324,9 @@ help:
 	@echo "... consumers.o"
 	@echo "... consumers.i"
 	@echo "... consumers.s"
+	@echo "... container_cache.o"
+	@echo "... container_cache.i"
+	@echo "... container_cache.s"
 	@echo "... data_container.o"
 	@echo "... data_container.i"
 	@echo "... data_container.s"
