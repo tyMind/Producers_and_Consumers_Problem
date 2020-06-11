@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.cpp
-consumers.h
-/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h
-
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h
 data_container.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
@@ -40,12 +36,30 @@ queue
 mutex
 -
 
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/main.cpp
+iostream
+-
+vector
+-
+cstring
+-
+data_container.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
+random_generator.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/random_generator.h
+producers.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/producers.h
+consumers.h
+/home/unimind/Documents/Projects/Producers_and_Consumers_Problem/consumers.h
+
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/manager.h
 queue
 -
 mutex
 -
 thread
+-
+condition_variable
 -
 data_container.h
 /home/unimind/Documents/Projects/Producers_and_Consumers_Problem/data_container.h
