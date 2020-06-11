@@ -1,18 +1,19 @@
 #include "consumers.h"
 
-void Consumers::consumeElems(int from, int to) {
-
+void Consumers::consumeElems(int from, int to, std::string queueFileName) {
     while(dataQueueObj.getQueueSize()==0){
-        std::lock_guard<std::mutex>lck(queueMutex);
-
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000)); //"block" consumers
     }
     consumerCV.notify_all();
-    int queueFrontElement=dataQueueObj.getDeleteFromQueue();
-    containerCacheObj.writeToFile(queueFrontElement, "queue.txt");
+    {
+        std::unique_lock<std::mutex>lck(queueMutex);
+        int queueFrontElement=dataQueueObj.getDeleteFromQueue();
+        containerCacheObj.writeToFile(queueFrontElement, queueFileName);
+    }
 
 }
 
-void Consumers::runConsumer(int from, int to) {
+void Consumers::runConsumer(int from, int to, std::string queueFileName) {
     sleepThread();
-    consumeElems(from, to);
+    consumeElems(from, to, queueFileName);
 }

@@ -14,9 +14,6 @@ public:
     void produceElems(int from, int to);
     void runProducer(int from, int to);
 
-private:
-    std::condition_variable producersCV;
-
 };
 
 #endif //PRODUCERS_AND_CONSUMERS_PROBLEM_PRODUCERS_H

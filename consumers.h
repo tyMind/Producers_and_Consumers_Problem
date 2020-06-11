@@ -19,11 +19,9 @@ public:
     ContainerCache containerCacheObj;
 
 public:
-    void consumeElems(int from, int to);
-    void runConsumer(int from, int to);
+    void consumeElems(int from, int to, std::string queueFileName);
+    void runConsumer(int from, int to, std::string queueFileName);
 
-private:
-    std::condition_variable consumerCV;
 };
 
 

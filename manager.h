@@ -4,6 +4,7 @@
 #include <queue>
 #include <mutex>
 #include <thread>
+#include <condition_variable>
 
 #include "data_container.h"
 #include "random_generator.h"
@@ -18,6 +19,10 @@ protected:
 
 protected:
     void sleepThread();
+
+protected:
+    std::condition_variable consumerCV;
+    std::condition_variable producerCV;
 };
 
 #endif //PRODUCERS_AND_CONSUMERS_PROBLEM_MANAGER_H
