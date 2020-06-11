@@ -8,7 +8,7 @@ void Producers::produceElems(int from, int to) {
         std::unique_lock<std::mutex>lck(queueMutex);
 
         if(dataQueueObj.getQueueSize()>=dataQueueObj.queueMaxSize) {
-            producerCV.wait(lck, [this] { return !(dataQueueObj.getQueueSize() <= 80); });
+            producerCV.wait(lck, [this] { return !(dataQueueObj.getQueueSize() > 80); });
             dataQueueObj.pushIntoQueue(randomNumber);
             producerCV.notify_all();
             consumerCV.notify_all();
