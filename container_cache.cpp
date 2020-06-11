@@ -5,7 +5,7 @@ void ContainerCache::writeToFile(int numberToWrite, std::string fileName) {
 
     ofstreamObj.open(fileName, std::ios::out | std::ios::app);
     if(!ofstreamObj.is_open()){
-        std::cerr<<"file cannot be opened for writing the data of queue into it"<<std::endl;
+        std::cerr<<"file cannot be opened"<<std::endl;
     }
 
     ofstreamObj<<numberToWrite<<", ";
