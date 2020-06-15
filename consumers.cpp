@@ -1,6 +1,7 @@
 #include "consumers.h"
 
 void Consumers::consumeElems(int from, int to, std::string queueFileName) {
+
     //notify_all: unblock all waiting threads
     std::unique_lock<std::mutex> lck(queueMutex);
     if (dataQueueObj.getQueueSize() == 0) {
