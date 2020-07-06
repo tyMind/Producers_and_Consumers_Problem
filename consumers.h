@@ -15,7 +15,7 @@
 
 class Consumers: public Manager{
 
-public:
+private:
     ContainerCache containerCacheObj;
 
 public:

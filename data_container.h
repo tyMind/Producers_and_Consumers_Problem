@@ -8,7 +8,7 @@
 class DataQueue{
 protected:
     static std::queue<int>queue;
-public:
+private:
     static const int queueMaxSize;
     static const int queueStandardSize;
 
@@ -17,6 +17,7 @@ public:
     int getDeleteFromQueue();
     void printNumQueueElements();
     int getQueueSize();
+    int getQueueMaxSize();
 
 };
 

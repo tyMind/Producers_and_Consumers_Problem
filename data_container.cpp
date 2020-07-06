@@ -23,3 +23,7 @@ void DataQueue::printNumQueueElements() {
 int DataQueue::getQueueSize(){
     return queue.size();
 }
+
+int DataQueue::getQueueMaxSize() {
+    return queueMaxSize;
+}
